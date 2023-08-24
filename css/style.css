@@ -114,39 +114,39 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
-    transition: 5s;
+    /* transition: 5s;
     
     animation-name: annimate;
     animation-direction: alternate-reverse;
-    animation-duration: 30s;
+    animation-duration: 60s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; */
   } 
   
 
 
-  @keyframes annimate{
+  /* @keyframes annimate{
     0%{
-        background-image: url(../image/film-1668918_640.webp);
+        background-image: url(../image/istockphoto-458231189-612x612.jpeg);
     }
     20%{
-        background-image: url(../image/cheers-204742_640.webp);
+        background-image: url(../image/istockphoto-1478374885-612x612.jpeg);
     }
     40%{
-        background-image: url(../image/fantasy-4032943_1280.jpg);
+        background-image: url(../image/istockphoto-1412871535-612x612.jpeg);
     }
     60%{
-        background-image: url(../image/guitar-756326_640.jpg);
+        background-image: url(../image/istockphoto-1427212392-612x612.jpeg);
     }
     80%{
-        background-image: url(../image/agfa-682920_640.jpg);
+        background-image: url(../image/istockphoto-1437894225-612x612.jpeg);
     }
     100%{
-        background-image: url(../image/istockphoto-1499736452-612x612.webp);
+        background-image: url(../image/istockphoto-1371201030-612x612.webp);
     }
-}
+} */
 
 
 
@@ -212,7 +212,7 @@
     /* position: fixed;*/
      z-index: 1;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     position: relative;
     /* box-shadow: 5px 5px 5px 5px #111827; */
   }

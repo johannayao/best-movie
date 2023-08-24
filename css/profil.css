@@ -11,6 +11,7 @@ body{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 /* 
 
@@ -55,20 +56,30 @@ body{
             }
         } */
 
+.fhum{
+    width: 100px;
+    height: 100px;
+    background-color: #111827;
+    border-radius: 50px;
+    margin: 0 auto;
+    
+    
+}
+.lo{
+    width: 80%;
+    margin: 0 auto;
+    height: 440px;
+    
+    margin-top: 200px;
+}
+
 .conteneur{
-    width: 22%;
-    height: 72%;
+    width: 300px;
+    height: 420px;
     background-color: white;
     border-radius: 30px;
     margin: 0 auto;
-    
-}
-.logos{
-    width: 100px;
-    height: 100px;
-    background-color: rebeccapurple;
-    border-radius: 50px;
-    margin: 0 auto;
+   
     
 }
 .logos img{
@@ -81,50 +92,132 @@ body{
     margin: 0 auto;
     width: 86%;
     height: auto;
-    background-color: red;
+    background-color: #111827;
+    margin-top: 60px;
   
 }
 .care p{
-    margin-left: 40px;
+   
+    
    
 }
 p{
-    font-size: 1.5vw;
-}
-.care img{
+    color: white;
     
+    margin-left: 20px;
+    /* background-color: aquamarine; */
 }
-.papa{
-    /* background-color: green;
-    width: 600%;
-    height: 30PX; */
+
+.rond2{
+    display: flex;
     
 }
 .rond{
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    background-color: blue;
-   
-   
-   
-}
-.rond2{
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    background-color: blue;
+    display: flex;
     
 }
 .rond3{
+    display: flex;
+   
+}
+.icon{
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    background-color: white;
+   margin-left: 10px;
+}
+.rond{
+    width: 100%;
+    height: 50px;
+    
+    margin-top: 5px;
+}
+.rond2{
+    width: 100%;
+    height: 50px;
+    /* background-color: green; */
+    margin-top: 5px;
+}
+.rond3{
+    width: 100%;
+    height: 50px;
+    /* background-color: green; */
+    margin-top: 5px;
+}
+.icon1{
+    width: 28px;
+    height: 28px;
+    background-color: orange;
+    border-radius: 50px;
+}
+.rond img{
+    width: 23px;
+    height: 23px;
+    margin-left: 2px;
+}
+/* .icon{
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    background-color: blue;
+    
+} */
+.rond2 img{
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    margin-top: 4px;
+}
+/* .icon{
     width: 30px;
     height: 30px;
     border-radius: 50px;
     background-color: blue;
    
+} */
+.rond3 img{
+    width: 32px;
+    height: 32px;
+    
+    
 }
-@media screen and (max-width : 600px){
-    .papa{
-    width: 50%;
+/* @media screen and (max-width : 600px){
+    .fhum{
+        width: 45px;
+        height: 45px;
+    }
+ } */
+ @media screen and (max-width : 800px){
+    .fhum{
+        width: 40px;
+        height: 40px;
+    }
+    .rond2{
+        display: block;
+    }
+
+    .rond{
+        display: block;
+    }
+    .rond3{
+        display: block;
     }
  }
+
+ @media screen and (max-width : 800px){
+    .formulaire{
+        width: 200px;
+        height: 300px;
+    }
+ }
+    
+   
+ 
+ 
+ /* @media screen and (min-width : 800px){
+    .fhum{
+        width: 110px;
+        height: 100px;
+    }
+ } */
