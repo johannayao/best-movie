@@ -1,0 +1,344 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 60px;
+    width: 100%;
+    
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  
+
+  .nav > .nav-links > a{
+    color: white;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+ }
+ .nav > .nav-links > a:after{
+     content: '';
+     height: 2px;
+      background-color: red; 
+     /* border-bottom: 2px solid red; */
+     width: 0;
+     position: absolute;
+     bottom: -5px;
+     right: 0;
+     transition: 0.2s all ease-in-out;
+ }
+ .nav > .nav-links > a:hover:after{
+     width: 100%;
+     left: 0;
+ }
+
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      /* background-color: rgba(0, 0, 0, 0.3); */
+      background-color: transparent;
+    }
+
+    
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      /* background-color: #333; */
+      background-color: transparent;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      text-align: center;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+
+  .bouton-navbar1{
+    width: 180px;
+    height: 40px;
+    background-color: #111827;
+    border: none;
+    border-radius: 50px;
+    color: white;
+  }
+  .bouton-navbar2{
+    width: 180px;
+    height: 40px;
+    background-color: #E40613;
+    border: none;
+    border-radius: 50px;
+    color: white;
+  } 
+
+  .bouton-navbar1:hover{
+    background-color: #E40613;
+    border: 1px solid white;
+  }
+ 
+  .bouton-navbar2:hover{
+    background-color: #fff;
+    color: #E40613;
+    border: 1px solid #E40613 ;
+  }
+  input{
+    width: 250px;
+    height: 33px;
+    border: none;
+    border-radius: 1px;
+  } 
+  ::placeholder{
+    text-align: center;
+  }
+
+
+  body {
+    /* margin: 0px;
+    font-family: 'segoe ui';
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/istockphoto-1132149387-170667a.webp);
+     background-attachment: fixed;  
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;  */
+     /* transition: 10s;
+    
+    animation-name: annimate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;  */
+   
+  } 
+
+
+
+    	 /* @keyframes annimate{
+            0%{
+                background-image: url(../image/istockphoto-1486802665-612x612.webp);
+            }
+            20%{
+                background-image: url(../image/cheers-204742_640.webp);
+            }
+            40%{
+                background-image: url(../image/girl-1990347_640.jpg);
+            }
+            60%{
+                background-image: url(../image/guitar-756326_640.jpg);
+            }
+            80%{
+                background-image: url(../image/lolo.webp);
+            }
+            100%{
+                background-image: url(../image/istockphoto-1499736452-612x612.webp);
+            }
+        }  */
+
+
+
+        p{
+            color: white;
+        }
+        .part{
+            /* width: 70%; */
+            height: auto;
+            /* background-color: #E40613; */
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+        .music{
+            width: 60%;
+            height: auto;
+            /* background-color: #111827;    */
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+           /* justify-content: space-between;  */
+            
+        }
+        .audio{
+            background-color: #111827; 
+            
+            width: 40%;
+            height: auto;
+            /* box-shadow: 10px 15px 20px 10px rgba(0,0,0,0.5); */
+            /* background-color: chartreuse; */
+            /* display: fex;
+            justify-content: center;
+            align-items: center; */
+    
+        }
+        .audio audio{
+            /* background-color: #111827; */
+            /* margin-top: 1rem; */
+            width: 100%;
+        }
+        p{
+          color: white;
+        }
+        .fou{
+            width: 40%;
+            height: auto;
+             /* background-color: rgba(0,0,0,0.5); */
+             background-color: #111827;  
+              
+            
+             /* background-color: rgba(0,0,0,0.5);  */
+             /* background-color: #111827; */
+             
+             
+        }
+        h2{
+            font-size: 2.5rem;
+            text-align: center;
+              color: white;
+             border-bottom: 2px solid  rgba(0,0,0,0.5); ; 
+        }
+        p{
+            font-size: 2.2vh;
+            margin: 10px;
+            /* background-color: rebeccapurple; */
+        }
+        .images{
+            /* background-color: rebeccapurple; */
+            display: flex;
+        }
+        /* .grand{
+            width: 100%;
+            height: 50px;
+            background-color: chartreuse;
+            border-bottom: 2px solid white;
+        }  */
+        @media screen and (max-width:1200px) {
+            h2{
+                font-size: 2vw;
+            }
+        }
+        @media screen and (max-width:1200px) {
+            p{
+                font-size: 2vw;
+            }
+        }
+        /* @media screen and (max-width:1400px) {
+            .images{
+                display: flex;
+                    display: block;
+            }
+        } */
+        /* @media screen and (max-width: 600px) {
+            h2{
+                font-size: 1.5vw;
+            }
+        } */
+        .grand h2{
+            
+        }
+        .un{
+            display: flex;
+            justify-content: space-between;
+            /* background-color: royalblue; */
+            border-bottom: 2px solid  rgba(0,0,0,0.5); ; 
+        }
+        .deux{
+            display: flex;
+            justify-content: space-between;
+            /* background-color: royalblue; */
+            border-bottom: 2px solid  rgba(0,0,0,0.5); ; 
+        }
+        .trois{
+            display: flex;
+            justify-content: space-between;
+            /* background-color: royalblue; */
+            border-bottom: 2px solid  rgba(0,0,0,0.5); ; 
+        }
+        .quatre{
+            display: flex;
+            justify-content: space-between;
+            /* background-color: royalblue; */
+            border-bottom: 2px solid  rgba(0,0,0,0.5); ; 
+        }
+        .cinq{
+            display: flex;
+            justify-content: space-between;
+            /* background-color: royalblue; */
+            border-bottom: 2px solid  rgba(0,0,0,0.5); ; 
+        }
+        .six{
+            display: flex;
+            justify-content: space-between;
+            /* background-color: royalblue; */
+            border-bottom: 2px solid  rgba(0,0,0,0.5); ; 
+        }
+        

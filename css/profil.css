@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/istockphoto-1132149387-170667a.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* 
+
+body{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/istockphoto-1132149387-170667a.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    transition: 5s;
+
+        animation-name: annimate;
+        animation-direction: alternate-reverse;
+        animation-duration: 30s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+}
+    	@keyframes annimate{
+            0%{
+                background-image: url(../image/istockphoto-1486802665-612x612.webp);
+            }
+            20%{
+                background-image: url(../image/cheers-204742_640.webp);
+            }
+            40%{
+                background-image: url(../image/girl-1990347_640.jpg);
+            }
+            60%{
+                background-image: url(../image/guitar-756326_640.jpg);
+            }
+            80%{
+                background-image: url(../image/lolo.webp);
+            }
+            100%{
+                background-image: url(../image/istockphoto-1499736452-612x612.webp);
+            }
+        } */
+
+.conteneur{
+    width: 22%;
+    height: 72%;
+    background-color: white;
+    border-radius: 30px;
+    margin: 0 auto;
+    
+}
+.logos{
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border-radius: 50px;
+    margin: 0 auto;
+    
+}
+.logos img{
+    
+    width: 100%;
+    margin-top: -6px;
+}
+
+.care{
+    margin: 0 auto;
+    width: 86%;
+    height: auto;
+    background-color: red;
+  
+}
+.care p{
+    margin-left: 40px;
+   
+}
+p{
+    font-size: 1.5vw;
+}
+.care img{
+    
+}
+.papa{
+    /* background-color: green;
+    width: 600%;
+    height: 30PX; */
+    
+}
+.rond{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: blue;
+   
+   
+   
+}
+.rond2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: blue;
+    
+}
+.rond3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: blue;
+   
+}
+@media screen and (max-width : 600px){
+    .papa{
+    width: 50%;
+    }
+ }

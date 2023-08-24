@@ -1,0 +1,352 @@
+
+
+
+
+
+ * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 60px;
+    width: 100%;
+    /* background-color: #4d4d4d; */
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  /* .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  } */
+
+  .nav > .nav-links > a{
+    color: white;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+ }
+ .nav > .nav-links > a:after{
+     content: '';
+     height: 2px;
+      background-color: red; 
+     /* border-bottom: 2px solid red; */
+     width: 0;
+     position: absolute;
+     bottom: -5px;
+     right: 0;
+     transition: 0.2s all ease-in-out;
+ }
+ .nav > .nav-links > a:hover:after{
+     width: 100%;
+     left: 0;
+ }
+
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      /* background-color: rgba(0, 0, 0, 0.3); */
+      background-color: transparent;
+    }
+
+    
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      /* background-color: #333; */
+      background-color: transparent;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      text-align: center;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+.tout{
+     height: 100vh; 
+    /* height: auto; */
+    width: 100%;
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/istockphoto-1132149387-170667a.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    transition: 5s;
+
+        animation-name: annimate;
+        animation-direction: alternate-reverse;
+        animation-duration: 30s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+}
+    	@keyframes annimate{
+            0%{
+                background-image: url(../image/istockphoto-1486802665-612x612.webp);
+            }
+            20%{
+                background-image: url(../image/cheers-204742_640.webp);
+            }
+            40%{
+                background-image: url(../image/girl-1990347_640.jpg);
+            }
+            60%{
+                background-image: url(../image/guitar-756326_640.jpg);
+            }
+            80%{
+                background-image: url(../image/lolo.webp);
+            }
+            100%{
+                background-image: url(../image/istockphoto-1499736452-612x612.webp);
+            }
+        }
+
+        .bouton-navbar1{
+          width: 180px;
+          height: 40px;
+          background-color: #111827;
+          border: none;
+          border-radius: 50px;
+          color: white;
+        }
+        .bouton-navbar2{
+          width: 180px;
+          height: 40px;
+          background-color: #E40613;
+          border: none;
+          border-radius: 50px;
+          color: white;
+        } 
+      
+        .bouton-navbar1:hover{
+          background-color: #E40613;
+          border: 1px solid white;
+        }
+       
+        .bouton-navbar2:hover{
+          background-color: #fff;
+          color: #E40613;
+          border: 1px solid #E40613 ;
+        }
+        input{
+          width: 250px;
+          height: 33px;
+          border: none;
+          border-radius: 1px;
+        } 
+        ::placeholder{
+          text-align: center;
+        }
+
+
+
+
+
+
+
+
+
+
+     body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/istockphoto-1132149387-170667a.webp); 
+     background: url(../video/Faire\ un\ cercle\ de\ progression\ en\ SVG\ _\ HTML\ &\ CSS\ Facile.mp4); 
+      background-attachment: fixed;  
+      background-attachment: scroll;  
+     background-position: center center;
+    
+    background-size: cover;
+    background-repeat: no-repeat; 
+  } 
+      .conteneur{
+        /* background-color: blue; */
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+        display: flex; 
+        
+    } 
+      input{
+      /* width: 200px;
+      height: 50px;
+      background-color: chartreuse;
+      margin-bottom: -50px; */
+    } 
+.row{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    transform: 0.3s;
+    /* background-color: red; */
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+   
+}
+.kiki{
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+.kiki input{
+  /* margin-bottom: 3rem; */
+  width: 50%;
+  border-radius: 30px;
+}
+.kiki h1{
+  /* margin-bottom: 2rem; */
+}
+
+.row1{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transform: 0.3s;
+    /* background-color: red; */
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+   
+}
+.card-video1{
+    display: flex;
+    
+}
+.card{
+   
+    width: 30%;
+    height: 210px;
+    /* background-color: aqua; */
+    margin: 14px;
+}
+.card-video2{
+    display: flex;
+    margin-top: -7px;
+}
+.video1{
+    width: 100%;
+    height: auto;
+   
+}
+.video2{
+    width: 100%;
+    height: auto;
+    
+}
+ /* h1{
+  text-align: center;
+ margin: 0 auto;
+ color: white;
+} */
+.vo{
+    margin-top: -20px;
+    width: 100%;
+    background-color: blueviolet;
+}
+.petite-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+.video1 :hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, .25);
+}
+
+.video2 :hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, .25);
+}
+
+@media screen and (max-width:1200px){
+    .petite-icon{
+        display: block;
+    }
+
+    .card{
+        width: 40%;
+    }
+ }
+
+ @media screen and (max-width:600px){
+    .petite-icon{
+        display: block;
+    }
+
+    .card{
+        width: 90%;
+    }
+ } 

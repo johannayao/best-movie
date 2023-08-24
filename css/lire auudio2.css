@@ -1,0 +1,270 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 60px;
+    width: 100%;
+    
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  
+
+  .nav > .nav-links > a{
+    color: white;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+ }
+ .nav > .nav-links > a:after{
+     content: '';
+     height: 2px;
+      background-color: red; 
+     /* border-bottom: 2px solid red; */
+     width: 0;
+     position: absolute;
+     bottom: -5px;
+     right: 0;
+     transition: 0.2s all ease-in-out;
+ }
+ .nav > .nav-links > a:hover:after{
+     width: 100%;
+     left: 0;
+ }
+
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      /* background-color: rgba(0, 0, 0, 0.3); */
+      background-color: transparent;
+    }
+
+    
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      /* background-color: #333; */
+      background-color: transparent;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      text-align: center;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+
+  .bouton-navbar1{
+    width: 180px;
+    height: 40px;
+    background-color: #111827;
+    border: none;
+    border-radius: 50px;
+    color: white;
+  }
+  .bouton-navbar2{
+    width: 180px;
+    height: 40px;
+    background-color: #E40613;
+    border: none;
+    border-radius: 50px;
+    color: white;
+  } 
+
+  .bouton-navbar1:hover{
+    background-color: #E40613;
+    border: 1px solid white;
+  }
+ 
+  .bouton-navbar2:hover{
+    background-color: #fff;
+    color: #E40613;
+    border: 1px solid #E40613 ;
+  }
+  input{
+    width: 250px;
+    height: 33px;
+    border: none;
+    border-radius: 1px;
+  } 
+  ::placeholder{
+    text-align: center;
+  }
+
+
+
+  .tout{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/istockphoto-1132149387-170667a.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    transition: 5s;
+
+        animation-name: annimate;
+        animation-direction: alternate-reverse;
+        animation-duration: 30s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+}
+    	@keyframes annimate{
+            0%{
+                background-image: url(../image/istockphoto-1220706655-612x612.webp);
+                background-position: center center;
+               background-size: cover;
+            }
+            20%{
+                background-image: url(../image/music-748125_1280.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+            40%{
+                background-image: url(../image/guitar-2751572_1280.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+            60%{
+                background-image: url(../image/guitar-832890_1280.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+            80%{
+                background-image: url(../image/adult-3086307_1280.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+            100%{
+                background-image: url(../image/istockphoto-1220706655-612x612.webp);
+                background-position: center center;
+                background-size: cover;
+            }
+        }
+
+        h1{
+            color: white;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        body{
+            /* background-color: #111827; */
+        }
+
+     .conteneur{
+        width: 100%;
+        height: auto;
+        background-color: #111827;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+     }
+     .conteneur1{
+        width: 100%;
+        height: auto;
+        background-color: #111827;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+     }
+     .box{
+        width: 12%;
+        height: auto;
+        background-color: white;
+         margin: 20px;
+     }
+     .fo{
+        margin-top: 2rem;
+     }
+     audio{
+        width: 100%;
+     }
+      @media screen and (max-width : 1200px){
+        .box{
+           width: 20%;
+        }
+     }
+     @media screen and (max-width : 600px){
+        .box{
+            width: 90%;
+        }
+     } 
