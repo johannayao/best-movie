@@ -14,15 +14,10 @@ font-family: 'Quicksand', sans-serif;
   }
   
   .nav {
-    height: 500px;
+    height: 100px;
     width: 100%;
-    background-color: #4d4d4d;
     position: relative;
-    background: url(../image/adult-3086307_1280.jpeg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    /* background-size: 100% 100%; */
-    background-size: cover;
+    
     
   }
 
