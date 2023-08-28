@@ -255,7 +255,7 @@ p{
     width: 350px;
     height: auto;
     padding: 1rem;
-    background-color: #E40613;
+    /* background-color: #E40613; */
     /* box-shadow: 3px 3px 10px 10px rgba(222, 216, 216, 0.412); */
     margin: 20px;
      border-radius: 10px; 

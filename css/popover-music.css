@@ -1,0 +1,117 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inknut Antiqua', serif;
+font-family: 'Quicksand', sans-serif;
+
+  }
+  
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/istockphoto-1132149387-170667a.webp);
+    background-attachment: fixed;  
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat; 
+   ;
+  }
+  .tout{
+    width: 90%;
+    height: auto;
+    /* background-color: aliceblue; */
+    border: 2px solid black;
+    margin: 0 auto;
+  }
+  h2{
+    color: black;
+  }
+  .grand{
+    display: flex;
+    width: 90%;
+    /* background-color: blue; */
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .ki{
+    width: 30%;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 40px;
+  }
+  h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+  }
+  audio{
+    width: 100%;
+  }
+  p{
+    text-align: center;
+    font-size: 17px;
+    color: black;
+  }
+  
+  .rond{
+    width: 220px;
+    height: 220px;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: url(../image/girl-1990347_640.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  /* @media (max-width:600px) {
+    .rond{
+        width: 120px;
+        height: 120px;
+
+    }
+    } */
+
+    /* @media (min-width:296px) and (max-width:500px) {
+        .rond{
+            width: 50px;
+            height: 50px;
+    
+        }
+        } */
+
+    @media (max-width:1200px) {
+        .rond{
+            width: 170px;
+            height: 170px;
+    
+        }
+        .ki{
+            width: 30%;
+        }
+        }
+        @media (max-width:600px) {
+            .rond{
+                width: 120px;
+                height: 120px;
+        
+            }
+            
+            }
+
+            @media (max-width:600px) {
+                .rond{
+                    width: 90px;
+                    height: 90px;
+                    
+                    
+                }
+                .ki{
+                    width: 50%;
+                }
+                
+                }
