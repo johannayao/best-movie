@@ -561,7 +561,12 @@ font-family: 'Quicksand', sans-serif;
     .cons img{
      
     }
-    
+    .ki{
+      width: 80px;
+      height: 50px;
+      
+      background-color: #111827;
+    } 
     .la{
       width: 100%;
       height: auto;

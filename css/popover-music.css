@@ -566,6 +566,14 @@ body{
     color: black;
   }
   
+
+
+  .chocho{
+    width: 90px;
+    height: 50px;
+    
+    background-color: #111827;
+  } 
   .rond{
     width: 220px;
     height: 220px;

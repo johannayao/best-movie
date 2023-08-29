@@ -228,6 +228,13 @@
            /* justify-content: space-between;  */
             
         }
+
+        .ki{
+          width: 80px;
+          height: 50px;
+          
+          background-color: #111827;
+        } 
         .audio{
             background-color: #111827; 
             
