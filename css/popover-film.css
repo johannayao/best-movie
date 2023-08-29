@@ -1,0 +1,686 @@
+
+* {
+    box-sizing: border-box;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: 'Inknut Antiqua', serif;
+font-family: 'Quicksand', sans-serif;
+
+  }
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 60px;
+    width: 100%;
+    
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  
+
+  .nav > .nav-links > a{
+    color: white;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+ }
+ .nav > .nav-links > a:after{
+     content: '';
+     height: 2px;
+      background-color: red; 
+     
+     width: 0;
+     position: absolute;
+     bottom: -5px;
+     right: 0;
+     transition: 0.2s all ease-in-out;
+ }
+ .nav > .nav-links > a:hover:after{
+     width: 100%;
+     left: 0;
+ }
+
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+     
+      background-color: transparent;
+    }
+
+    
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      /* background-color: #333; */
+      background-color: transparent;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      text-align: center;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+
+
+
+@media (min-width:601px) and (max-width:963px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      text-align: center;
+    }
+    .bouton-navbar2{
+        margin-top: 15px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #E40613;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+
+  .bouton-navbar1{
+    width: 180px;
+    height: 40px;
+    background-color: #111827;
+    border: none;
+    border-radius: 50px;
+    color: white;
+  }
+  .bouton-navbar2{
+    width: 180px;
+    height: 40px;
+    background-color: #E40613;
+    border: none;
+    border-radius: 50px;
+    color: white;
+  } 
+
+  .bouton-navbar1:hover{
+    background-color: #E40613;
+    border: 1px solid white;
+  }
+ 
+  .bouton-navbar2:hover{
+    background-color: #fff;
+    color: #E40613;
+    border: 1px solid #E40613 ;
+  }
+  input{
+    width: 250px;
+    height: 33px;
+    border: none;
+    border-radius: 1px;
+  } 
+  ::placeholder{
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .tout{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/children-593313_1280.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    /* transition: 30.s; */
+
+        animation-name: annimate;
+        animation-direction: alternate-reverse;
+        animation-duration: 70s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+}
+    	@keyframes annimate{
+            0%{
+                background-image: url(../image/singer-84874_1280.jpeg);
+                background-position: center center;
+               background-size: cover;
+            }
+            20%{
+                background-image: url(../image/music-748125_1280.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+            40%{
+                background-image: url(../image/girl-3231703_1280.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+            60%{
+                background-image: url(../image/music-1379807_1280.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+            80%{
+                background-image: url(../image/guitar-4308581_1280.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+            100%{
+                background-image: url(../image/guitar-1354025_1280.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+        }
+
+
+
+
+
+
+
+
+
+  /* .tout{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/children-593313_1280.jpeg);
+    
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    transition: 5s;
+
+        animation-name: annimate;
+        animation-direction: alternate-reverse;
+        animation-duration: 30s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+}
+    	@keyframes annimate{
+            0%{
+                background-image: url(../image/camera-7903435_1280.jpeg);
+                background-position: center center;
+               background-size: cover;
+            }
+            20%{
+                background-image: url(../image/camcorder-15944_1280.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+            40%{
+                background-image: url(../image/woman-5915374_1280.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+            60%{
+                background-image: url(../image/jojo.webp);
+                background-position: center center;
+                background-size: cover;
+            }
+            80%{
+                background-image: url(../image/font1.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+            100%{
+                background-image: url(../image/istockphoto-1397054568-612x612.jpeg);
+                background-position: center center;
+                background-size: cover;
+            }
+        } */
+        .box video{
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+             margin-left: 13px;  
+        }
+        
+        
+        .kaikai{
+          /* border: 1px solid transparent; */
+          /* width: 100%;
+          height: 100px; */
+          margin-top: 0.7rem;
+        }
+
+        .box{
+          width: 12%;
+          height: 180px;
+         background-color: white;
+           margin: 20px;
+           border-radius: 20px;
+           animation: floli 1s linear 0s 1 normal none;
+         transition: 1s;;
+       }
+
+       @media (min-width: 273px) and (max-width: 1200px){
+
+        .box{
+          height: 100%;
+          
+        }
+       
+  
+      }
+
+       .box:hover{
+        transform: scale(1.1);
+        box-shadow: 2px 2px 2px 2px gray;
+       }
+  
+       @keyframes floli {
+        
+        0% {
+          transform:rotate3d(1,1,0,80deg);
+          opacity:0;
+        }
+        100% {
+          transform:rotate3d(1,1,0,0deg);
+          opacity:1;
+        }
+      }
+        h1{
+            color: white;
+            font-weight: bold;
+            font-size: 50px;
+        }
+      
+        /* .box video{
+            width: 100%;
+            height: 100%;
+        } */
+     .conteneur{
+        width: 100%;
+        height: auto;
+        /* background-color: #111827; */
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+     }
+     .conteneur1{
+        width: 100%;
+        height: auto;
+        /* background-color: #111827; */
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+     }
+
+
+     .che{
+        width: 100%;
+        height: auto;
+        /* border: 10px solid green; */
+        margin: 0 auto;
+        margin-top: 1rem;
+     }
+
+     
+     .click video{
+        width: 100%;
+        
+     }
+
+     .click{
+        width: 830px;
+        height: 100%;
+        border: 7px solid red;
+        margin: 0 auto;
+     }
+     
+     .fo{
+        margin-top: 2rem;
+     }
+
+     @media screen and (max-width : 1200px){
+        .box{
+           width: 20%;
+        }
+     }
+     @media screen and (max-width : 600px){
+        .box{
+            width: 90%;
+        }
+     } 
+
+
+     
+      @media screen and (max-width : 1200px){
+         .click{
+           width: 700px;
+        } 
+     }
+     @media screen and (max-width : 716px){
+        .click{
+             width: 500px;
+        }
+     } 
+
+     @media screen and (max-width : 533px){
+        .click{
+             width: 450px;
+        }
+     } 
+
+     @media screen and (max-width : 472px){
+        .click{
+             width: 400px;
+        }
+     } 
+
+     @media screen and (max-width : 412px){
+        .click{
+             width: 330px;
+        }
+     } 
+
+     @media screen and (max-width : 312px){
+        .click{
+             width: 290px;
+        }
+     } 
+
+
+
+      /* @media screen (min-width: 295px) and (max-width: 817px)
+
+     .click{
+        
+     } */
+
+
+     h2{
+      width: 50%;
+      height: 50px;
+     
+      border-bottom: 2px solid  red
+    }
+    .la{
+      width: 100%;
+     
+      /* background-color: yellow; */
+    }
+    p .kaikai {
+      font-size: 33px;
+      color: white;
+    }
+    .bax video{
+     width: 100%;
+     height: 100%;
+     /* background-color: rebeccapurple; */
+    }
+    
+     @media screen and (max-width:1200px){
+      .box{
+        width: 40%;
+      }
+    }
+    @media screen and (max-width:600px){
+      .box{
+        width: 90%;
+      }
+    }
+    
+    @media screen and (max-width:1200px){
+      .bax{
+        width: 40%;
+      }
+    }
+    @media screen and (max-width:600px){
+      .bax{
+        width: 90%;
+      }
+    }
+    
+    
+    .footer{
+      width: 100%;
+      height: auto;
+      background-color: #111827;
+      display: flex;
+      flex-direction: row;
+       justify-content: center; 
+       flex-flow: wrap;
+        margin-top: 60px;
+    }
+    .cons{
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      border-radius: 50px;
+     
+    }
+    .cons1{
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      border-radius: 50px;
+      margin-left: 15px;
+      margin-top: 7px;
+    }
+    .cons2{
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      border-radius: 50px;
+      margin-left: 15px;
+      margin-top: 7px;
+    }
+    .cons3{
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      border-radius: 50px;
+      margin-left: 15px;
+      margin-top: 7px;
+    }
+    .cons3 img{
+      margin-left: 5px;
+      margin-top: 4px;
+    }
+    .cons4{
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      border-radius: 50px;
+      margin-left: 15px;
+      margin-top: 7px;
+    }
+    .cons4 img{
+      margin-left: 5px;
+      margin-top: 4px;
+    }
+    .cons1 img{
+      margin-left: -10px;
+      margin-top: -11px;
+    }
+    .cons2 img{
+      margin-left: 5px;
+      margin-top: 4px;
+    }
+    .cons img{
+     
+    }
+    
+    .la{
+      width: 100%;
+      height: auto;
+      border-top: 2px solid gray;
+      width: 100%;
+      height: 100px;
+    }
+    .lo{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .footer-box{
+      width: 20%;
+      height: 200px;
+      /* background-color: aquamarine; */
+      margin: 20px;
+      box-sizing: border-box;
+    }
+    @media screen and (max-width:1200px){
+      .footer-box{
+        width: 40%;
+      }
+    }
+    @media screen and (max-width:600px){
+      .footer-box{
+        width: 90%;
+      }
+    }
+
+
+
+   
+
+    
+
+
+
+
+    small{
+      color: white;
+      opacity: 3;
+    }
+
+    body{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/istockphoto-1132149387-170667a.webp);
+      background-attachment: fixed;  
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat; 
+     ;
+    }
+    .footer-box h2{
+      color: white;
+    }
+    
