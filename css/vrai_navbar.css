@@ -58,7 +58,7 @@ a{
     font-size: 18px;
   }
   
-  .nav > .nav-links > .ki {
+  .nav > .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
@@ -68,7 +68,7 @@ a{
   }
 
 
-  .nav > .nav-links > .ki:after{
+  .nav > .nav-links > a:after{
     content: '';
     height: 2px;
      /* background-color: red;  */
@@ -80,7 +80,7 @@ a{
     transition: 0.2s all ease-in-out;
 }
 
-.nav > .nav-links > .ki:hover:after{
+.nav > .nav-links > a:hover:after{
     width: 100%;
     left: 0;
 }
@@ -91,6 +91,12 @@ a{
     display: none;
   }
 
+  .ki{
+    width: 90px;
+    height: 50px;
+    /* background-color: #E40613; */
+    background-color: #111827;
+  }
 
   .bouton-navbar1{
     width: 160px;
@@ -153,6 +159,11 @@ a{
    justify-content: center;
     /* background-color: #E40613; */
   }
+  /* .ki{
+    width: 30px;
+    height: 20px;
+    background-color: red;
+  } */
   span{
     text-align: center;
     color: white;
