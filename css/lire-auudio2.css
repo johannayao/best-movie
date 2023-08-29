@@ -1,24 +1,30 @@
 
-* {
-    box-sizing: border-box;
-  }
+
   * {
     box-sizing: border-box;
     font-family: 'Inknut Antiqua', serif;
-font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
 
   }
-  
   body {
     margin: 0px;
     font-family: 'segoe ui';
+  }
+  body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/istockphoto-1132149387-170667a.webp);
+    background-attachment: fixed;  
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat; 
+   ;
   }
   
   .nav {
     height: 60px;
     width: 100%;
-    background-color: #111827;
-    /* background-color: transparent; */
+    /* background-color: #111827; */
+    background-color: transparent; 
     position: relative;
   }
   
@@ -182,14 +188,7 @@ font-family: 'Quicksand', sans-serif;
     }
   }
 
-  .bouton-navbar1{
-    width: 180px;
-    height: 40px;
-    background-color: #111827;
-    border: none;
-    border-radius: 50px;
-    color: white;
-  }
+  
   .bouton-navbar2{
     width: 180px;
     height: 40px;
@@ -197,17 +196,26 @@ font-family: 'Quicksand', sans-serif;
     border: none;
     border-radius: 50px;
     color: white;
+    animation: ba 2s 0s ease-in-out infinite;
   } 
 
-  .bouton-navbar1:hover{
-    background-color: #E40613;
-    border: 1px solid white;
-  }
+  @keyframes ba {
+			
+		0% {
+			border: 2px solid white;
+		}
+		100% {
+			border: 2px solid #111827;
+		}
+	}
+
+  
  
   .bouton-navbar2:hover{
-    background-color: #fff;
+    background-color: #111827;
     color: #E40613;
     border: 1px solid #E40613 ;
+   
   }
   input{
     width: 250px;
@@ -219,6 +227,9 @@ font-family: 'Quicksand', sans-serif;
     text-align: center;
   }
 
+ p .kaikai{
+  color: white;
+}
 
 
   .tout{
@@ -227,15 +238,15 @@ font-family: 'Quicksand', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/istockphoto-1132149387-170667a.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/children-593313_1280.jpeg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
-    transition: 5s;
+    /* transition: 30.s; */
 
         animation-name: annimate;
         animation-direction: alternate-reverse;
-        animation-duration: 30s;
+        animation-duration: 70s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
         animation-play-state: running;
@@ -243,7 +254,7 @@ font-family: 'Quicksand', sans-serif;
 }
     	@keyframes annimate{
             0%{
-                background-image: url(../image/istockphoto-1220706655-612x612.webp);
+                background-image: url(../image/singer-84874_1280.jpeg);
                 background-position: center center;
                background-size: cover;
             }
@@ -253,22 +264,22 @@ font-family: 'Quicksand', sans-serif;
                 background-size: cover;
             }
             40%{
-                background-image: url(../image/guitar-2751572_1280.jpeg);
+                background-image: url(../image/girl-3231703_1280.jpeg);
                 background-position: center center;
                 background-size: cover;
             }
             60%{
-                background-image: url(../image/guitar-832890_1280.jpeg);
+                background-image: url(../image/music-1379807_1280.jpeg);
                 background-position: center center;
                 background-size: cover;
             }
             80%{
-                background-image: url(../image/img-font.jpeg);
+                background-image: url(../image/guitar-4308581_1280.jpeg);
                 background-position: center center;
                 background-size: cover;
             }
             100%{
-                background-image: url(../image/istockphoto-1220706655-612x612.webp);
+                background-image: url(../image/guitar-1354025_1280.jpeg);
                 background-position: center center;
                 background-size: cover;
             }
@@ -286,7 +297,7 @@ font-family: 'Quicksand', sans-serif;
      .conteneur{
         width: 100%;
         height: auto;
-        background-color: #111827;
+        /* background-color: #111827; */
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -296,7 +307,7 @@ font-family: 'Quicksand', sans-serif;
      .conteneur1{
         width: 100%;
         height: auto;
-        background-color: #111827;
+        /* background-color: #111827; */
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -308,7 +319,25 @@ font-family: 'Quicksand', sans-serif;
         height: auto;
         background-color: white;
          margin: 20px;
+         animation: floli 1s linear 0s 1 normal none;
+         transition: 1s;;
      }
+     .box:hover{
+      transform: scale(1.1);
+      box-shadow: 3px 3px 3px 3px gray;
+     }
+
+     @keyframes floli {
+			
+      0% {
+        transform:rotate3d(1,1,0,80deg);
+        opacity:0;
+      }
+      100% {
+        transform:rotate3d(1,1,0,0deg);
+        opacity:1;
+      }
+    }
      .fo{
         margin-top: 2rem;
      }
