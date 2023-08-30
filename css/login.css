@@ -26,13 +26,13 @@ body{
 }
     	@keyframes annimate{
             0%{
-                background-image: url(../image/istockphoto-1486802665-612x612.webp);
+                background-image: url(../image/audience-1835431_1280.jpeg);
             }
             20%{
-                background-image: url(../image/cheers-204742_640.webp);
+                background-image: url(../image/two.jpeg);
             }
             40%{
-                background-image: url(../image/girl-1990347_640.jpg);
+                background-image: url(../image/three.jpeg);
             }
             60%{
                 background-image: url(../image/guitar-756326_640.jpg);
@@ -41,7 +41,7 @@ body{
                 background-image: url(../image/lolo.webp);
             }
             100%{
-                background-image: url(../image/istockphoto-1499736452-612x612.webp);
+                background-image: url(../image/vilain.jpeg);
             }
         }
 
@@ -86,16 +86,9 @@ a{
   .btn-submit button:hover{
     background-color: #111827;
   }
-  /* @media screen and (max-width : 610px){
-    .formulaire{
-        width: 20rem;
-        height: auto;
-    }
-    
- } */
+  
  .kikie{
-  /* width: 100%;
-  border: 3px solid black; */
+  
  }
 
 
@@ -190,7 +183,9 @@ a{
     margin: 2rem 0.5rem;
   }
   .cam{
-
+    width: 100px;
+    height: 50px;
+    margin-top: 2rem;
   }
   .cam a{
     padding: 0.5rem 1rem;
@@ -198,7 +193,7 @@ a{
     border-radius: 10px;
     color: white;
     margin-left: 10px;
-    
+   
    
   }
   .cam a:hover{
@@ -314,8 +309,21 @@ a{
   @media screen and (max-width:600px){
     .footer-box{
       width: 90%;
+      
+    }
+    .formulaire{
+      width: 20rem;
     }
   }
+
+  @media screen and (max-width: 341px){
+    .formulaire{
+     width: 16rem; 
+    }
+   
+  }
+
+  
   small{
     color: white;
     opacity: 3;

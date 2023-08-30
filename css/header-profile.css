@@ -247,22 +247,25 @@ font-family: 'Quicksand', sans-serif;
       position: absolute;
       display: block;
       width: 100%;
-      background-color: rgb(81, 78, 78);
+      background-color: white;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 50px;
       left: 0px;
+      text-align: center;
+      color: black;
     }
     .nav > .nav-links > a {
       display: block;
       width: 100%;
+      color: black;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
+      height: calc(40vh - 50px);
       overflow-y: auto;
     }
   }
@@ -297,22 +300,24 @@ font-family: 'Quicksand', sans-serif;
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #E40613;
+      background-color: white;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 50px;
       left: 0px;
+      text-align: center;
     }
     .nav > .nav-links > a {
       display: block;
       width: 100%;
+      color: black;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
+      height: calc(40vh - 50px);
       overflow-y: auto;
     }
   }

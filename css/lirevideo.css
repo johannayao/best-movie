@@ -32,6 +32,7 @@ font-family: 'Quicksand', sans-serif;
     padding: 10px 10px 10px 10px;
   }
   
+
   .nav > .nav-btn {
     display: none;
   }
@@ -78,6 +79,12 @@ font-family: 'Quicksand', sans-serif;
     display: none;
   }
   
+
+
+
+
+
+  
   @media (max-width:600px) {
     .nav > .nav-btn {
       display: inline-block;
@@ -107,8 +114,8 @@ font-family: 'Quicksand', sans-serif;
       position: absolute;
       display: block;
       width: 100%;
-      /* background-color: #333; */
-      background-color: transparent;
+     
+      background-color: white;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
@@ -119,12 +126,13 @@ font-family: 'Quicksand', sans-serif;
     .nav > .nav-links > a {
       display: block;
       width: 100%;
+      color: black;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
+      height: calc(40vh - 50px);
       overflow-y: auto;
     }
   }
@@ -162,25 +170,35 @@ font-family: 'Quicksand', sans-serif;
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #E40613;
+      background-color: white;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 50px;
       left: 0px;
+      text-align: center;
     }
     .nav > .nav-links > a {
       display: block;
       width: 100%;
+      color: black;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
+      
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
+      height: calc(30vh);
       overflow-y: auto;
+      display: block;
     }
   }
+
+
+
+
+
+
 
 
   .bouton-navbar1{
@@ -198,7 +216,18 @@ font-family: 'Quicksand', sans-serif;
     border: none;
     border-radius: 50px;
     color: white;
+    animation: ba 2s 0s ease-in-out infinite;
   } 
+
+  @keyframes ba {
+			
+		0% {
+			border: 2px solid white;
+		}
+		100% {
+			border: 2px solid #111827;
+		}
+	}
 
   .bouton-navbar1:hover{
     background-color: #E40613;
@@ -369,7 +398,7 @@ font-family: 'Quicksand', sans-serif;
           width: 12%;
           height: 180px;
          background-color: white;
-           margin: 20px;
+           margin: 30px;
            border-radius: 20px;
            animation: floli 1s linear 0s 1 normal none;
          transition: 1s;;
@@ -379,6 +408,17 @@ font-family: 'Quicksand', sans-serif;
 
         .box{
           height: 100%;
+          
+        }
+       
+  
+      }
+
+
+      @media (min-width: 1201px) and (max-width: 1285px){
+
+        #coil{
+          display: none;
           
         }
        
