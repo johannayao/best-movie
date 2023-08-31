@@ -507,7 +507,7 @@ font-family: 'Quicksand', sans-serif;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
-    /* transition: 30.s; */
+    
 
         animation-name: annimate;
         animation-direction: alternate-reverse;
@@ -561,7 +561,7 @@ font-family: 'Quicksand', sans-serif;
      .conteneur{
         width: 100%;
         height: auto;
-        /* background-color: #111827; */
+        
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -571,7 +571,7 @@ font-family: 'Quicksand', sans-serif;
      .conteneur1{
         width: 100%;
         height: auto;
-        /* background-color: #111827; */
+       
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -630,11 +630,7 @@ font-family: 'Quicksand', sans-serif;
         }
      } 
 
-     /* @media screen and (max-width : 600px){
-      .nav{
-          height: auto;
-      }
-   }  */
+     
 
 
      .footer{

@@ -136,16 +136,13 @@ font-family: 'Quicksand', sans-serif;
     color: #E40613;
     border: 1px solid #E40613 ;
   }
-  body{
-    /* background-color: #111827; */
-  }
+
 
   .content{
     width: 100%;
     height: 50px;
    display: flex;
    justify-content: center;
-    /* background-color: #E40613; */
   }
   span{
     text-align: center;
@@ -311,13 +308,13 @@ font-family: 'Quicksand', sans-serif;
     .nav > .nav-links > a {
       display: block;
       width: 100%;
-      color: black;
+      color: blue;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(40vh - 50px);
+      height: calc(50vh - 50px);
       overflow-y: auto;
     }
   }
@@ -326,17 +323,10 @@ font-family: 'Quicksand', sans-serif;
     width: 100%;
     height: auto;
     margin-top: 50px;
-    /* border: 2px solid red; */
-    /* margin-top: 150px; */
-     /* display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;  */
  }
  .fhum{
     width: 80%;
     height: auto;
-    /* background-color: #111827; */
     margin: 0 auto;
      display: flex;
     justify-content: space-around;
@@ -346,7 +336,6 @@ font-family: 'Quicksand', sans-serif;
  .box{
     width: 16%;
     height: 100%;
-    /* background-color: aqua; */
     animation: jolie 1s linear 0s 1 normal none;
     transition: 1s;
  }
@@ -375,32 +364,16 @@ font-family: 'Quicksand', sans-serif;
  .box video{
    width: 100%;
    height: 100%;
-   /* background-color: rebeccapurple; */
  }
 
-
-
-
- /* .conteneur1{
-  width: 100%;
-  height: auto;
-  background-color: #111827;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-} */
 .conteneur{
   width: 100%;
   height: auto;
-  /* background-color: blueviolet; */
 }
 
 .fo{
   width: 80%;
   height: auto;
-  /* background-color: red; */
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -418,7 +391,6 @@ audio{
 .bax{
   width: 15%;
   height: 100%;
-  /* background-color: lawngreen; */
   animation: jolie 1s linear 0s 1 normal none;
   transition: 1s;
 }
@@ -449,7 +421,6 @@ h2{
 .la{
   width: 100%;
  
-  /* background-color: yellow; */
 }
 p .kaikai {
   font-size: 33px;
@@ -458,7 +429,7 @@ p .kaikai {
 .bax video{
  width: 100%;
  height: 100%;
- /* background-color: rebeccapurple; */
+
 }
 
  @media screen and (max-width:1200px){
@@ -481,111 +452,4 @@ p .kaikai {
   .bax{
     width: 90%;
   }
-}
-
-
-.footer{
-  width: 100%;
-  height: auto;
-  background-color: #111827;
-  display: flex;
-  flex-direction: row;
-   justify-content: center; 
-   flex-flow: wrap;
-    margin-top: 60px;
-}
-.cons{
-  width: 35px;
-  height: 35px;
-  background-color: white;
-  border-radius: 50px;
- 
-}
-.cons1{
-  width: 35px;
-  height: 35px;
-  background-color: white;
-  border-radius: 50px;
-  margin-left: 15px;
-  margin-top: 7px;
-}
-.cons2{
-  width: 35px;
-  height: 35px;
-  background-color: white;
-  border-radius: 50px;
-  margin-left: 15px;
-  margin-top: 7px;
-}
-.cons3{
-  width: 35px;
-  height: 35px;
-  background-color: white;
-  border-radius: 50px;
-  margin-left: 15px;
-  margin-top: 7px;
-}
-.cons3 img{
-  margin-left: 5px;
-  margin-top: 4px;
-}
-.cons4{
-  width: 35px;
-  height: 35px;
-  background-color: white;
-  border-radius: 50px;
-  margin-left: 15px;
-  margin-top: 7px;
-}
-.cons4 img{
-  margin-left: 5px;
-  margin-top: 4px;
-}
-.cons1 img{
-  margin-left: -10px;
-  margin-top: -11px;
-}
-.cons2 img{
-  margin-left: 5px;
-  margin-top: 4px;
-}
-.cons img{
- 
-}
-
-.la{
-  width: 100%;
-  height: auto;
-  border-top: 2px solid gray;
-  width: 100%;
-  height: 100px;
-}
-.lo{
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-.footer-box{
-  width: 20%;
-  height: 200px;
-  /* background-color: aquamarine; */
-  margin: 20px;
-  box-sizing: border-box;
-}
-@media screen and (max-width:1200px){
-  .footer-box{
-    width: 40%;
-  }
-}
-@media screen and (max-width:600px){
-  .footer-box{
-    width: 90%;
-  }
-}
-small{
-  color: white;
-  opacity: 3;
-}
-.footer-box h2{
-  color: white;
 }

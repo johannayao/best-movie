@@ -211,7 +211,7 @@ a{
 
 
 
-
+/* 
 
   .footer{
     width: 100%;
@@ -297,7 +297,7 @@ a{
   .footer-box{
     width: 20%;
     height: 200px;
-    /* background-color: aquamarine; */
+    
     margin: 20px;
     box-sizing: border-box;
   }
@@ -331,4 +331,4 @@ a{
   .footer-box h2{
     color: white;
   }
-  
+   */

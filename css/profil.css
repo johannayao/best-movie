@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+    font-family: 'Inknut Antiqua', serif;
+   font-family: 'Quicksand', sans-serif;
+
+  }
 
 body{
     height: 100vh;
@@ -14,60 +20,12 @@ body{
     
 }
 
-#chochain{
-      
+#chochain{   
     width: 80px;
     height: 50px;
-    
     background-color: #111827;
  
  }
-
-/* 
-
-body{
-    height: 90vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/istockphoto-1132149387-170667a.webp);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat; 
-    transition: 5s;
-
-        animation-name: annimate;
-        animation-direction: alternate-reverse;
-        animation-duration: 30s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-play-state: running;
-        animation-timing-function: ease-in-out;
-}
-    	@keyframes annimate{
-            0%{
-                background-image: url(../image/istockphoto-1486802665-612x612.webp);
-            }
-            20%{
-                background-image: url(../image/cheers-204742_640.webp);
-            }
-            40%{
-                background-image: url(../image/girl-1990347_640.jpg);
-            }
-            60%{
-                background-image: url(../image/guitar-756326_640.jpg);
-            }
-            80%{
-                background-image: url(../image/lolo.webp);
-            }
-            100%{
-                background-image: url(../image/istockphoto-1499736452-612x612.webp);
-            }
-        } */
-
-
-
 
 .fhum{
     width: 120px;
@@ -75,15 +33,11 @@ body{
     background-color: #111827;
     border-radius: 50px;
     margin: 0 auto;
-    
-    
 }
 .lo{
     width: 80%;
     margin: 0 auto;
     height: 440px;
-    
-    /* margin-top: 200px; */
 }
 
 .conteneur{
@@ -92,24 +46,21 @@ body{
     background-color: white;
     border-radius: 30px;
     margin: 0 auto;
-   
-    
+    margin-top: 200px;
 }
 .logos img{
-    
     width: 100%;
     margin-top: -6px;
 }
+
 
 .care{
     margin: 0 auto;
     width: 87%;
     height: 210px;
     background-color: #111827;
-    /* background-color: red; */
     margin-top: 27px; 
     border-radius: 10px;
-
     position: relative;
   
 }
@@ -155,19 +106,17 @@ p{
 .rond2{
     width: 100%;
     height: 50px;
-    /* background-color: green; */
     margin-top: 12px;
 }
 .rond3{
     width: 100%;
     height: 50px;
-    /* background-color: green; */
     margin-top: 5px;
 }
 .icon1{
     width: 28px;
     height: 28px;
-    background-color: orange;
+   
     border-radius: 50px;
 }
 .rond img{
@@ -176,26 +125,13 @@ p{
     margin-left: 2px;
     margin-top: 2px;
 }
-/* .icon{
-    width: 28px;
-    height: 28px;
-    border-radius: 50px;
-    background-color: blue;
-    
-} */
 .rond2 img{
     width: 30px;
     height: 21px;
     margin-left: 4px;
     margin-top: 6px;
 }
-/* .icon{
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    background-color: blue;
-   
-} */
+
 .rond3 img{
     width: 40px;
     height: 36px;
@@ -211,31 +147,13 @@ p{
     left: 10PX;
 }
 
-/* @media screen and (max-width : 600px){
-    .fhum{
-        width: 45px;
-        height: 45px;
-    }
- } */
+
  @media screen and (max-width : 500px){
     .fhum{
         width: 60px;
         height: 60px;
     }
-    .care{
-       
-    }
-    .rond2{
-        display: block;
-    }
-
-    .rond{
-        display: block;
-    }
-    .rond3{
-        display: block;
-    }
- }
+    
 
  @media screen and (max-width : 800px){
     .formulaire{
@@ -247,129 +165,10 @@ p{
         
     }
  }
+}
     
    
- @media screen and (min-width : 500px) and (max-width : 800px){
 
- }
  
  
- /* @media screen and (min-width : 800px){
-    .fhum{
-        width: 110px;
-        height: 100px;
-    }
- } */
-
-
-
-
-/* 
- .footer{
-    width: 100%;
-    height: auto;
-    background-color: #111827;
-    display: flex;
-    flex-direction: row;
-     justify-content: center; 
-     flex-flow: wrap;
-     margin-top: 60px;  
-  }
-  .cons{
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-radius: 50px;
-   
-  }
-  .cons1{
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-radius: 50px;
-    margin-left: 15px;
-    margin-top: 7px;
-  }
-  .cons2{
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-radius: 50px;
-    margin-left: 15px;
-    margin-top: 7px;
-  }
-  .cons3{
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-radius: 50px;
-    margin-left: 15px;
-    margin-top: 7px;
-  }
-  .cons3 img{
-    margin-left: 5px;
-    margin-top: 4px;
-  }
-  .cons4{
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-radius: 50px;
-    margin-left: 15px;
-    margin-top: 7px;
-  }
-  .cons4 img{
-    margin-left: 5px;
-    margin-top: 4px;
-  }
-  .cons1 img{
-    margin-left: -10px;
-    margin-top: -11px;
-  }
-  .cons2 img{
-    margin-left: 5px;
-    margin-top: 4px;
-  }
-  
-  
-  .la{
-    width: 100%;
-    height: auto;
-    border-top: 2px solid gray;
-    width: 100%;
-    height: 100px;
-  }
-  .lo{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  .footer-box{
-    width: 20%;
-    height: 200px;
-    
-    margin: 20px;
-    box-sizing: border-box;
-  }
-  @media screen and (max-width:1200px){
-    .footer-box{
-      width: 40%;
-    }
-  }
-  @media screen and (max-width:600px){
-    .footer-box{
-      width: 90%;
-    }
-  }
-  small{
-    color: white;
-    opacity: 3;
-  }
-  .footer-box h2{
-    color: white;
-  }
-  
-  a{
-    font-weight: 700;
-  }
-   */
+ 
