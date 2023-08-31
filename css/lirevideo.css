@@ -229,7 +229,7 @@ font-family: 'Quicksand', sans-serif;
     align-items: center;
     justify-content: center;
     
-    background-image: url(../image/istockphoto-1220706655-612x612.webp);
+    background-image: url(../image/camera-7903435_1280.jpeg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
@@ -245,22 +245,22 @@ font-family: 'Quicksand', sans-serif;
 }
     	@keyframes annimate{
             0%{
-                background-image: url(../image/istockphoto-1220706655-612x612.webp);
+                background-image: url(../image/camera-7903435_1280.jpeg);
                 background-position: center center;
                background-size: cover;
             }
             20%{
-                background-image: url(../image/video-2562034_1280.jpeg);
+                background-image: url(../image/camcorder-15944_1280.jpeg);
                 background-position: center center;
                 background-size: cover;
             }
             40%{
-                background-image: url(../image/video-recording-3767454_1280.jpeg);
+                background-image: url(../image/woman-5915374_1280.jpeg);
                 background-position: center center;
                 background-size: cover;
             }
             60%{
-                background-image: url(../image/demonstration-767983_1280.webp);
+                background-image: url(../image/jojo.webp);
                 background-position: center center;
                 background-size: cover;
             }
@@ -270,7 +270,7 @@ font-family: 'Quicksand', sans-serif;
                 background-size: cover;
             }
             100%{
-                background-image: url(../image/cinema-strip-64074_1280.webp);
+                background-image: url(../image/istockphoto-1397054568-612x612.jpeg);
                 background-position: center center;
                 background-size: cover;
             }
@@ -288,7 +288,26 @@ font-family: 'Quicksand', sans-serif;
           background-color: white;
            margin: 20px;
            border-radius: 10px;
+           animation: floli 1s linear 0s 1 normal none;
+         transition: 1s;;
        }
+
+       .box:hover{
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px 3px gray;
+       }
+  
+       @keyframes floli {
+        
+        0% {
+          transform:rotate3d(1,1,0,80deg);
+          opacity:0;
+        }
+        100% {
+          transform:rotate3d(1,1,0,0deg);
+          opacity:1;
+        }
+      }
         h1{
             color: white;
             font-weight: bold;
@@ -302,7 +321,7 @@ font-family: 'Quicksand', sans-serif;
      .conteneur{
         width: 100%;
         height: auto;
-        background-color: #111827;
+        /* background-color: #111827; */
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -312,7 +331,7 @@ font-family: 'Quicksand', sans-serif;
      .conteneur1{
         width: 100%;
         height: auto;
-        background-color: #111827;
+        /* background-color: #111827; */
         display: flex;
         justify-content: space-around;
         flex-direction: row;

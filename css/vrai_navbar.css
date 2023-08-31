@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Inknut Antiqua', serif;
-font-family: 'Quicksand', sans-serif;
+   font-family: 'Quicksand', sans-serif;
 
   }
   
@@ -9,9 +9,7 @@ font-family: 'Quicksand', sans-serif;
     margin: 0px;
     font-family: 'segoe ui';
   }
-  p{
-    
-  }
+ 
   
   .nav {
     height: 500px;
@@ -27,7 +25,9 @@ font-family: 'Quicksand', sans-serif;
   }
 
   
-
+a{
+  font-weight: bold;
+}
   body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../image/istockphoto-1132149387-170667a.webp);
     background-attachment: fixed;  
@@ -64,6 +64,7 @@ font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     color: #efefef;
     position: relative;
+    font-weight: bolder;
   }
 
 
